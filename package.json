@@ -1,0 +1,11 @@
+{
+  "name": "keycodemap",
+  "version": "1.0.9",
+  "description": "This is a project to map keyCodes/which properties of keyevents to localized key values.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pascal Pothmann <pascal.pothmann@gmail.com>",
+  "license": "ISC"
+}
