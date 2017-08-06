@@ -1,11 +1,15 @@
 {
   "name": "keycodemap",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is a project to map keyCodes/which properties of keyevents to localized key values.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pascal Pothmann <pascal.pothmann@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p0thi/keycodemap"
+  }
 }
