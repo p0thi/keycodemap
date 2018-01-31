@@ -1,23 +1,20 @@
 const maps = require('./util/maps');
 
-function Mapper(event) {
-    this.mapName = "us";
-    this.event = event;
-}
+let mapName = "us";
 
-Mapper.prototype = {
-    useMap : function(name) {
-        this.mapName = name.toLowerCase();
+module.exports = {
+    seMap: function (name) {
+        mapName = name.toLowerCase();
         return this;
     },
-    map : function (value) {
+    map: function (value) {
         if (typeof value === 'number') {
             if (value === undefined
-                || maps[this.mapName] === undefined
-                || maps[this.mapName][value] === undefined) {
+                || maps[mapName] === undefined
+                || maps[mapName][value] === undefined) {
                 return "";
             }
-            return maps[this.mapName][value];
+            return maps[mapName][value];
         }
         else {
             var ev;
@@ -27,13 +24,11 @@ Mapper.prototype = {
                 ev = this.event;
             if (ev === undefined
                 || ev.which === undefined
-                || maps[this.mapName] === undefined
-                || maps[this.mapName][ev.which] === undefined) {
+                || maps[mapName] === undefined
+                || maps[mapName][ev.which] === undefined) {
                 return "";
             }
-            return maps[this.mapName][ev.which];
+            return maps[mapName][ev.which];
         }
     }
-};
-
-module.exports = Mapper;
+}
