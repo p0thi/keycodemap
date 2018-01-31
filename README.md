@@ -30,3 +30,7 @@ Now you can use `Map` to get the key names:
 var name = Map.map(event); // event is a javascript key event
 console.log(name); // e.g. if the key code was 64 it will print 'SEMICOLON'
 ```
+To change the locale, just call
+```javascript
+Map.useMap(newLocationString); // newLocationString i a ISO 3166-1 string e.g. "US"
+```
