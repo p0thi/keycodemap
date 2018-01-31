@@ -7,7 +7,7 @@ function Mapper(event) {
 
 Mapper.prototype = {
     useMap : function(name) {
-        this.mapName = name;
+        this.mapName = name.toLowerCase();
         return this;
     },
     map : function (event) {

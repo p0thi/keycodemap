@@ -7,7 +7,7 @@
 ...
 ```
 # Features
-You can change the keyboard layout by country string defined after [ISO 3166-1](../glossary.md#main-process) .
+You can change the keyboard layout by country string defined after [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) .
 Example for United States of America = "US".
 You can pass in a javascript key event to get the Name.
 
