@@ -10,14 +10,19 @@ Mapper.prototype = {
         this.mapName = name;
         return this;
     },
-    map : function () {
-        var event = this.event;
-        if (event.which === undefined
+    map : function (event) {
+        var ev;
+        if (event)
+            ev = event;
+        else
+            ev = this.event;
+        if (ev === undefined
+            || ev.which === undefined
             || maps[this.mapName] === undefined
-            || maps[this.mapName][event.which] === undefined) {
+            || maps[this.mapName][ev.which] === undefined) {
             return "";
         }
-        return maps[this.mapName][event.which];
+        return maps[this.mapName][ev.which];
     }
 };
 
