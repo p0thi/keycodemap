@@ -10,19 +10,29 @@ Mapper.prototype = {
         this.mapName = name.toLowerCase();
         return this;
     },
-    map : function (event) {
-        var ev;
-        if (event)
-            ev = event;
-        else
-            ev = this.event;
-        if (ev === undefined
-            || ev.which === undefined
-            || maps[this.mapName] === undefined
-            || maps[this.mapName][ev.which] === undefined) {
-            return "";
+    map : function (value) {
+        if (typeof value === 'number') {
+            if (value === undefined
+                || maps[this.mapName] === undefined
+                || maps[this.mapName][value] === undefined) {
+                return "";
+            }
+            return maps[this.mapName][value];
         }
-        return maps[this.mapName][ev.which];
+        else {
+            var ev;
+            if (value)
+                ev = value;
+            else
+                ev = this.event;
+            if (ev === undefined
+                || ev.which === undefined
+                || maps[this.mapName] === undefined
+                || maps[this.mapName][ev.which] === undefined) {
+                return "";
+            }
+            return maps[this.mapName][ev.which];
+        }
     }
 };
 
