@@ -515,7 +515,7 @@ module.exports = {
         "WIN_OEM_CLEAR", // [254]
         "" // [255]
     ],
-    "electron us" : [
+    "electron_us" : [
         "", // [0]
         "", // [1]
         "", // [2]
