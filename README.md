@@ -14,6 +14,7 @@ You can pass in a javascript key event or the key code as a number to get the Na
 <details>
 <summary>Click to expand</summary>
 United States of America ("US")
+Germany ("DE")
 </details>
 
 # Usage
@@ -23,8 +24,8 @@ Import it to your project
 ```javascript
 const keycodemap = require('keycodemap');
 ```
-The default location is 'US'.
-Now you can use `Map` to get the key names:
+The default location is 'US'. 
+Now you can use `map()` to get the key names:
 ```javascript
 // event is a javascript key event or a number
 var name = keycodemap.map(event);
@@ -34,6 +35,6 @@ console.log(name);
 ```
 To change the locale, just call
 ```javascript
-// newLocationString i a ISO 3166-1 string e.g. "US"
+// newLocationString i a ISO 3166-1 string e.g. "DE"
 keycodemap.useMap(newLocationString);
 ```
