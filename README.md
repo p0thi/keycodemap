@@ -30,7 +30,7 @@ Now you can use `map()` to get the key names:
 // event is a javascript key event or a number
 var name = keycodemap.map(event);
 
-// e.g. if the key code was 64 it will print 'SEMICOLON'
+// e.g. if the key code was 59 it will print 'SEMICOLON'
 console.log(name);
 ```
 To change the locale, just call
