@@ -1,6 +1,6 @@
 {
   "name": "keycodemap",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "This is a project to map keyCodes/which properties of keyevents to localized key values.",
   "main": "index.js",
   "scripts": {
